@@ -25,21 +25,3 @@ def delete_by_salary(salary):
     global salaries
     index=read_by_salaries(salary)
     salaries.pop(index)
-
-#test code
-create_salary(1000)
-create_salary(5000)
-create_salary(8000)
-create_salary(3000)
-result_salaries=read_all()
-for salary in result_salaries:
-    print(salary)
-
-print(read_by_salaries(8000))
-print(read_by_salaries(4000))
-print(salaries[read_by_salaries(8000)])
-
-update(8000,8500)
-print(read_all())
-delete_by_salary(1000)
-print(read_all())
